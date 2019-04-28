@@ -1,0 +1,164 @@
+body {
+    min-width: 1200px;
+}
+
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    font-family: "Microsoft Yahei",sans-serif;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    &:focus {
+        outline: none;
+    }
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+::-webkit-scrollbar  
+{  
+    width: 6px;  
+    height: 6px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 1px #F5F5F5;  
+    border-radius: 1px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    border-radius: 3px;  
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.1);  
+    background-color: rgba(0,0,0,.1);  
+}  
+
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+textarea { -webkit-appearance: none;}   
+
+html,body{
+    height: 100%;
+    width: 100%;
+    // background-color: #F5F5F5;
+}
+
+.fillcontain{
+    height: 100%;
+    width: 100%;
+}
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear{
+    zoom:1;
+}
+
+.back_img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.margin{
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+h2 {
+    font-size: 28px;
+    font-weight: normal;
+}
+.nub-top {
+    background-color: #fff;
+    padding: 10px 30px 20px;
+}
+.nub-back {
+    margin-top: 10px;
+}
+
+.el-card.is-always-shadow, .el-card.is-hover-shadow:focus, .el-card.is-hover-shadow:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.el-card, .el-message {
+    border-radius: 0;
+}
+
+.el-loading-spinner .path {
+    stroke: #fff;
+}
+
+.el-loading-spinner .el-loading-text {
+    color: #fff;
+}
+
+.el-form-item.is-success .el-input__inner, .el-form-item.is-success .el-input__inner:focus, .el-form-item.is-success .el-textarea__inner, .el-form-item.is-success .el-textarea__inner:focus {
+    border-color: #dcdfe6;
+}
+
+.el-button--mini {
+    padding: 6px 6px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+.el-button--mini + .el-button--mini {
+    margin-left: 6px;
+}
+.el-input-number .el-input__inner{
+    padding-left:0px; 
+    padding-right:0px;
+}
+.el-input-number{
+    width: 100px;
+}
+.el-input-number__decrease{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 25px;
+    margin: 6px 0px;
+}
+.el-input-number__increase{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 25px;
+    margin: 6px 0px;
+}
+.el-progress-bar{
+    width: 200px;
+}
